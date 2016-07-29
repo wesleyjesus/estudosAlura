@@ -13,7 +13,6 @@ main h1 {
 	color: #FFF;
 	text-align: center;
 	padding: 25px;
-	margin: 0;
 	border-bottom: 10px solid black;
 	text-transform: uppercase;
 }
@@ -30,7 +29,6 @@ p {
 }
 .citacao {
 	background-color: #D9E5E3;
-	padding: 20px;
 	border: 10px solid #C2CCCA;
 	width: 300px;
 	margin: 20px 40px;
@@ -41,8 +39,7 @@ p {
 .menu-navegacao {
 	background-color: #3C1D3D;
 	color: #F2FFFC;
-	padding: 20px;
-	text-align: center;
+ 	text-align: center;
 }
 .menu-navegacao a {
 	color: inherit;
@@ -51,7 +48,7 @@ p {
 }
 .menu-navegacao h1{
 	font-size: 30px;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 	text-transform: uppercase;
 }
 
@@ -66,7 +63,16 @@ p {
 .rodape-pagina {
 	background-color: black;
 	color: #F2FFFC;
-	padding: 20px;
+	clear: both;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.citacao, .menu-navegacao, .rodape-pagina {
+	padding: 15px;
 }
 
 .container {
@@ -101,7 +107,7 @@ em {
 .icones-sociais a{
 	width: 40px;
 	height: 40px;
-	display: inline-block;
+	display: block;
 	text-indent: -9999px;
 }
 
@@ -129,3 +135,27 @@ cite {
 	font-style: italic;
 	float: right;
 }
+
+main {
+	width: 85%;
+	padding-bottom: 80px;
+}
+
+.imagem-eu, .menu-navegacao{
+	box-sizing: border-box;
+	border-left: 10px solid black;
+	border-bottom: 10px solid black;
+}
+
+.imagem-eu {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+aside {
+	position: absolute;
+	top: 310px;
+	right: 0;
+	width: 15%;
+}	
