@@ -1,5 +1,5 @@
 html {
-	font-size: 120%;
+	font-size: 20px;
 }
 
 body{
@@ -10,13 +10,13 @@ body{
 h1, h2, a{
 	font-family: "Open Sans Condensed", "Arial", sans-serif;
 }
-main h1 {
-	font-size: 60px;
+.titulo-principal {
+	font-size: 300%;
 	background-color: #851944;
 	color: #FFF;
 	text-align: center;
-	padding: 25px;
-	border-bottom: 10px solid black;
+	padding: 1.5rem;
+	border-bottom: .5rem solid black;
 	text-transform: uppercase;
 }
 main a{
@@ -24,13 +24,13 @@ main a{
 }
 
 .subtitulo-texto {
-	font-size: 30px;
+	font-size: 1.5rem;
 	clear: both;
 }
 
 p {
 	text-align: justify;
-	margin: 20px 0;
+	margin: 1rem 0;
 	font-size: 1,25rem;
 }
 
@@ -45,8 +45,8 @@ p {
 	text-transform: uppercase;
 }
 .menu-navegacao h1{
-	font-size: 30px;
-	margin-bottom: 20px;
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
 	text-transform: uppercase;
 }
 
@@ -55,7 +55,7 @@ p {
 }
 
 .social-radape {
-	margin: 20px;
+	margin: 1rem;
 }
 
 .rodape-pagina {
@@ -70,13 +70,13 @@ p {
 }
 
 .citacao, .menu-navegacao, .rodape-pagina {
-	padding: 15px;
+	padding: 1rem;
 }
 
 .container {
 	width: 750px;
 	margin: auto;
-	padding: 30px 0;
+	padding: 1.5rem 0;
 }
 
 strong {
@@ -108,7 +108,7 @@ em {
 
 main {
 	width: 85%;
-	padding-bottom: 80px;
+	padding-bottom: 4rem;
 }
 
 .imagem-eu, .menu-navegacao{
