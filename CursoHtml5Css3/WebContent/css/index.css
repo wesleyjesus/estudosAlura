@@ -1,11 +1,4 @@
-.inicio-post{
-	background-color: #FFF;
-	position: absolute;
-	top: 3em;
-	right: 3em;
-	height: 6em;
-	padding: 1em;
-}
+
 .foto-home {
     height: 200px;
 }
@@ -108,50 +101,69 @@ main {
 	position: absolute;
 }
 .eficiencia {
-	top: 20%;
+	top: 30%;
 	left: 75%;
 }
 .boas-praticas {
-	top: 20%;
+	top: 30%;
 	right: 75%;
 }
 .codigo-limpo {
-	top: 30%;
+	top: 40%;
 	left: 85%;
 }
 .css3 {
-	top: 30%;
+	top: 40%;
 	right: 85%;
 }
 .html5 {
-	top: 10%;
+	top: 20%;
 	right: 80%;
 }
 .javascript {
-	top: 10%;
+	top: 20%;
 	left: 80%;
 }
 .acessibilidade {
-	top: 10%;
+	top: 20%;
 	right: 30%;
 }
 
 .responsivo {
-    top: 35%;
+    top: 45%;
     right: 65%;
 }
 
 .otimizacoes {
-    top: 35%;
+    top: 45%;
     left: 80%;
 }
 
 .agilidade {
-    top: 10%;
+    top: 20%;
     left: 30%;
 }
 
 .design {
-    top: 35%;
+    top: 45%;
     left: 65%;
+}
+.titulo-principal {
+	position: relative;
+}
+.blog .inicio-post{
+	background-color: #F2FFFC;
+	position: absolute;
+	top: 4em;
+	right: 3em;
+	left: 30%;
+	height: 8em;
+	padding: 1.5em;
+	color: black;
+}
+.blog .mais-recente {
+	background-color: #F2FFFC;
+}
+.blog .mais-recente a {
+	color: #F26;
 }
