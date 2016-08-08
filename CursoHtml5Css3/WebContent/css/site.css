@@ -7,17 +7,20 @@ body{
 	background-color: #F2FFFC;
 	line-height: 1.5;
 }
-h1, h2, a{
+h1, h2, .subtitulo-principal{
 	font-family: "Open Sans Condensed", "Arial", sans-serif;
 }
+h1 {
+	font-size: 3em;
+	text-transform: uppercase;
+	
+}
 .titulo-principal {
-	font-size: 300%;
 	background-color: #851944;
 	color: #FFF;
 	text-align: center;
 	padding: 1.5rem;
 	border-bottom: .5rem solid black;
-	text-transform: uppercase;
 }
 main a{
 	color: #851944;
@@ -28,10 +31,9 @@ main a{
 	clear: both;
 }
 
-p {
+main p {
 	text-align: justify;
-	margin: 1rem 0;
-	font-size: 1,25rem;
+	margin: 1em 0;
 }
 
 .menu-navegacao {
@@ -121,6 +123,7 @@ main {
 	position: absolute;
 	right: 0;
 	top: 0;
+	height: 300px;
 }
 
 aside {
