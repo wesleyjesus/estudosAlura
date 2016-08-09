@@ -1,6 +1,6 @@
-
 .foto-home {
     height: 200px;
+    border-radius: 50%;
 }
 .saudacao p {
     font-size: 1.5em;
@@ -34,6 +34,7 @@
     display: block;
     text-align: center;
     margin: 2em auto;
+	border-radius: 10px;
 }
 .secao-inicio {
 	padding: 2em;
@@ -155,9 +156,9 @@ main {
 	background-color: #F2FFFC;
 	position: absolute;
 	top: 4em;
-	right: 3em;
+	right: 4em;
 	left: 30%;
-	height: 8em;
+	height: 6em;
 	padding: 1.5em;
 	color: black;
 }
@@ -166,4 +167,8 @@ main {
 }
 .blog .mais-recente a {
 	color: #F26;
+}
+
+.blog li {
+	width: 30%;
 }
