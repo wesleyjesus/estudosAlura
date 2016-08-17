@@ -178,3 +178,21 @@ main {
 .blog li {
 	width: 30%;
 }
+
+div {
+	border-radius: 50px;
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+	text-align: center;
+	line-height: 100px;
+}
+
+.bola1 {
+	transform: translatez(2px);
+	
+}
+
+.bola2 {
+	transform: translatez(-1px);
+}
