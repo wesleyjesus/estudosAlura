@@ -6,28 +6,36 @@ translate(10px, 50px); */
     height: 200px;
     border-radius: 50%;
 }
+
 .saudacao p {
     font-size: 1.5em;
     color: #99A;
     line-height: 1;
     padding: 2em;
 }
+
 .saudacao-inicio {
 	font-size: 3em;
     color: #889;
 }
+
 .saudacao-ultima-linha {
     text-align: right;
     display: block;
 }
+
 .saudacao strong {
     color: #000;
     font-size: 2em;
 }
+
 .saudacao em {
     color: #851944;
     font-size: 4em;
+    display: inline-block;
+    transform: rotate(-5deg) skew(-10deg);
 }
+
 .botao-index {
     font-size: 1.25em;
     background-color: #851944;
@@ -40,120 +48,152 @@ translate(10px, 50px); */
     margin: 2em auto;
 	border-radius: 10px;
 }
+
 .secao-inicio {
 	padding: 2em;
 }
+
 .secao-inicio h2 {
     font-size: 3em;
     text-transform: uppercase;
     margin-bottom: .5em;
 }
+
 .trabalhos {
     background-color: #3C1D3D;
     border-top: .5em solid #000;
     border-bottom: .5em solid #000;
 }
+
 .trabalhos h2 {
     color: #FFF;
 }
+
 .trabalhos ul {
     overflow: hidden;
     border: .5em solid black;
 }
+
 .trabalhos li {
     float: left;
     width: 33.333%;
 }
+
 .trabalhos img {
     width: 100%;
     display: block;
 }
+
 .blog {
     background-color: #999;
     position: relative;
     color: #FFF;
     border-bottom: .5em solid #851944;
 }
+
 .blog small {
 	position: relative;
 	top: -2em;
 }
+
 .blog li a {
     color: #FCF;
     padding: .5em;
     display: block;
 }
+
 footer {
     background-color: #000;
     color: #FFF;
     padding: 2em;
 }
+
 footer h2{
 	font-size: 3em;
 }
+
 footer a {
     color: #F99;
 }
+
 main {
     width: 100%;
     padding-bottom: 0;
     float: none;
 }
+
 .palavra-home {
 	font-family: "Shadows Into Light", cursive;
 	color: #D5447E;
 	font-weight: bolder;
 	position: absolute;
 }
+
 .eficiencia {
 	top: 35%;
 	left: 75%;
+	transform: rotate(30deg);
 }
+
 .boas-praticas {
 	top: 35%;
 	right: 75%;
+	transform: rotate(-30deg);
 }
+
 .codigo-limpo {
 	top: 40%;
 	left: 85%;
+	transform: rotate(30deg);
 }
+
 .css3 {
-	top: 40%;
+	top: 60%;
 	right: 85%;
+	transform: rotate(-30deg);
 }
+
 .html5 {
 	top: 20%;
 	right: 80%;
+	transform: rotate(-30deg);
 }
+
 .javascript {
 	top: 20%;
 	left: 80%;
+	transform: rotate(30deg);
 }
+
 .acessibilidade {
 	top: 20%;
 	right: 30%;
+	transform: rotate(-30deg);
 	
 }
 
 .responsivo {
-    top: 55%;
+    top: 65%;
     right: 65%;
+    transform: rotate(-30deg);
 }
 
 .otimizacoes {
-    top: 55%;
+    top: 65%;
     left: 80%;
+    transform: rotate(30deg);
 }
 
 .agilidade {
-    transform: rotate(-30deg);
     top: 20%;
     left: 30%;
+    transform: rotate(30deg);
 }
 
 .design {
-    top: 45%;
+    top: 65%;
     left: 65%;
+    transform: rotate(30deg);
 }
 .titulo-principal {
 	position: relative;
@@ -186,6 +226,10 @@ div {
 	background-color: blue;
 	text-align: center;
 	line-height: 100px;
+}
+
+.bolas {
+	perspective: 4px;
 }
 
 .bola1 {
