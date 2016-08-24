@@ -122,7 +122,20 @@ main {
     float: none;
 }
 
-.palavra-home {
+.palavras {
+	perspective: 6px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;	
+}
+
+.palavras li{
+	font-size: 400%;
+}
+
+.palavra-home {	
 	font-family: "Shadows Into Light", cursive;
 	color: #D5447E;
 	font-weight: bolder;
@@ -130,74 +143,75 @@ main {
 }
 
 .eficiencia {
-	top: 35%;
-	left: 75%;
-	transform: rotate(30deg);
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%) rotate(-5deg) translateZ(4px) scale(0.25);
 }
 
 .boas-praticas {
-	top: 35%;
-	right: 75%;
-	transform: rotate(-30deg);
+    top: 70%;
+    left: 20%;
+    transform: translate(-50%, -50%) rotate(10deg) translateZ(1px) scale(0.25);
 }
 
 .codigo-limpo {
-	top: 40%;
-	left: 85%;
-	transform: rotate(30deg);
+    top: 45%;
+    left: 25%;
+    transform: translate(-50%, -50%) rotate(-10deg) translateZ(2px) scale(0.25);
 }
 
 .css3 {
-	top: 60%;
-	right: 85%;
-	transform: rotate(-30deg);
+    top: 55%;
+    left: 35%;
+    transform: translate(-50%, -50%) rotate(5deg) translateZ(2px) scale(0.25);
 }
 
 .html5 {
-	top: 20%;
-	right: 80%;
-	transform: rotate(-30deg);
+    top: 30%;
+    left: 65%;
+    transform: translate(-50%, -50%) rotate(10deg) translateZ(2px) scale(0.25);
 }
 
 .javascript {
-	top: 20%;
-	left: 80%;
-	transform: rotate(30deg);
+    top: 15%;
+    left: 60%;
+    transform: translate(-50%, -50%) rotate(-5deg) translateZ(1px) scale(0.25);
 }
 
 .acessibilidade {
-	top: 20%;
-	right: 30%;
-	transform: rotate(-30deg);
-	
+    top: 30%;
+    left: 35%;
+    transform: translate(-50%, -50%) rotate(-5deg) translateZ(3px) scale(0.25);
 }
 
 .responsivo {
-    top: 65%;
-    right: 65%;
-    transform: rotate(-30deg);
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%) rotate(10deg) translateZ(3px) scale(0.25);
 }
 
 .otimizacoes {
-    top: 65%;
-    left: 80%;
-    transform: rotate(30deg);
+    top: 70%;
+    left: 65%;
+    transform: translate(-50%, -50%) rotate(-5deg) translateZ(2px) scale(0.25);
 }
 
 .agilidade {
-    top: 20%;
-    left: 30%;
-    transform: rotate(30deg);
+    top: 75%;
+    left: 35%;
+    transform: translate(-50%, -50%) rotate(5deg) translateZ(1px) scale(0.25);
 }
 
 .design {
-    top: 65%;
-    left: 65%;
-    transform: rotate(30deg);
+    top: 40%;
+    left: 60%;
+    transform: translate(-50%, -50%) rotate(10deg) translateZ(2px) scale(0.25);
 }
+
 .titulo-principal {
 	position: relative;
 }
+
 .blog .inicio-post{
 	background-color: #F2FFFC;
 	position: absolute;
@@ -208,9 +222,11 @@ main {
 	padding: 1.5em;
 	color: black;
 }
+
 .blog .mais-recente {
 	background-color: #F2FFFC;
 }
+
 .blog .mais-recente a {
 	color: #F26;
 }
@@ -219,24 +235,24 @@ main {
 	width: 30%;
 }
 
-div {
-	border-radius: 50px;
-	width: 100px;
-	height: 100px;
-	background-color: blue;
-	text-align: center;
-	line-height: 100px;
-}
-
-.bolas {
-	perspective: 4px;
-}
-
-.bola1 {
-	transform: translatez(2px);
+.banner-twitter {
+	width: 14em;
+	line-height: 1;
+	padding: 1em 0;
+	box-sizing: border-box;
 	
-}
-
-.bola2 {
-	transform: translatez(-1px);
+	text-align: center;
+	text-decoration: none;
+	background-color: #3C1D3D;
+	color: white;
+	border: .25em solid #000;
+	
+	font-size: 1.2em;
+	font-family: "Open Sans Condensed", sans-serif;
+	
+	position: absolute;
+	right: 0;
+	top: 0;
+	transform-origin: 0 0;
+	transform: translate(6.5765em, -2.4745em) rotate(45deg);
 }
