@@ -7,12 +7,15 @@ body{
 	background-color: #F2FFFC;
 	line-height: 1.5;
 }
+
 h1, h2, .subtitulo-principal{
 	font-family: "Open Sans Condensed", "Arial", sans-serif;
 }
+
 h1 {
 	font-size: 3em;
 	text-transform: uppercase;
+	text-shadow: 5px 5px #000;
 	
 }
 .titulo-principal {
@@ -69,6 +72,8 @@ main p {
 	left: 0;
 	width: 100%;
 	box-sizing: border-box;
+	background-color: rgba(0, 0, 0, .4);
+	text-align: right;
 }
 
 .citacao, .menu-navegacao, .rodape-pagina {
