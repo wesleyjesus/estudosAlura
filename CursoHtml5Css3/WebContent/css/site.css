@@ -64,7 +64,6 @@ main p {
 }
 
 .rodape-pagina {
-	background-color: black;
 	color: #F2FFFC;
 	clear: both;
 	position: fixed;
@@ -72,8 +71,13 @@ main p {
 	left: 0;
 	width: 100%;
 	box-sizing: border-box;
-	background-color: rgba(0, 0, 0, .4);
 	text-align: right;
+	background-image: radial-gradient(ellipse at right bottom, rgba(60, 29, 61, 0.8),
+    rgba(60, 29, 61, 0.8) 65%,
+    black 65%, black 70%, transparent 70%, transparent);
+    background-size: 30% 100%;
+	background-repeat: no-repeat;
+	background-position: right;
 }
 
 .citacao, .menu-navegacao, .rodape-pagina {
