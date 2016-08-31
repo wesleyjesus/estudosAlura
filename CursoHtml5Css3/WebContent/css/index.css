@@ -245,18 +245,30 @@ main {
 	height: 6em;
 	padding: 1.5em;
 	color: black;
+	display: none;
 }
 
-.blog .mais-recente {
-	background-color: #F2FFFC;
-}
+/* .blog .mais-recente { */
+/* 	background-color: #F2FFFC; */
+/* } */
 
-.blog .mais-recente a {
-	color: #F26;
-}
+/* .blog .mais-recente a { */
+/* 	color: #F26; */
+/* } */
 
 .blog li {
 	width: 30%;
+}
+
+.blog a:hover + .inicio-post,
+.blog a:focus + .inicio-post {
+	display: block;
+}
+
+.blog a:hover,
+.blog a:focus {
+    background-color: #F2FFFC;
+    color: #F26;
 }
 
 .banner-twitter {
@@ -297,4 +309,8 @@ footer h2{
 
 footer a {
     color: #F99;
+}
+
+footer a:hover {
+    color: red;
 }

@@ -29,6 +29,10 @@ main a{
 	color: #851944;
 }
 
+main a:hover{
+	color: red;
+}
+
 .subtitulo-texto {
 	font-size: 1.5rem;
 	clear: both;
@@ -44,11 +48,17 @@ main p {
 	color: #F2FFFC;
  	text-align: center;
 }
+
 .menu-navegacao a {
 	color: inherit;
 	font-family: "Open Sans Condensed", "Arial", sans-serif;
 	text-transform: uppercase;
 }
+
+.menu-navegacao a:hover, .menu-navegacao a:focus{
+	text-shadow: 0 0 2px #DA70D6;
+}
+
 .menu-navegacao h1{
 	font-size: 1.5rem;
 	margin-bottom: 1rem;
