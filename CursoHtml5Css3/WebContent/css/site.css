@@ -113,6 +113,18 @@ em {
 	height: 40px;
 	display: block;
 	text-indent: -9999px;
+	position: relative;
+}
+
+.icones-sociais a:hover::after {
+	content: attr(data-tooltip);
+	position: absolute;
+    top: 100%;
+    right: 0;
+    text-indent: 0;
+    width: 300%;
+    background: black;
+    font-size: .75em;
 }
 
 .github{

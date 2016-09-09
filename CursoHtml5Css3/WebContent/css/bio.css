@@ -1,3 +1,12 @@
+.container > p::first-letter {
+	font-size: 200%;
+	font-weight: bold;
+	color: #3C1D3D;
+	text-shadow: 1px 1px black;
+	margin-right: .2ch;
+	line-height: 1;
+}
+
 .citacao {
 	background-color: #D9E5E3;
 	border: .5em solid #C2CCCA;
@@ -26,6 +35,18 @@
 
 .citacao:nth-of-type(even) {
 	float: left;
+}
+
+.citacao::before {
+	content: '"';
+	position: absolute;
+	font-size: 10em;
+	color: #bbb;
+	line-height: .8;
+}
+
+.citacao > p {
+	position: relative;
 }
 
 cite {
