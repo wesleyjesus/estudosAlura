@@ -33,6 +33,8 @@ public class UsuariosSystemTest extends SeleniumTestBase {
 		assertTrue(achouEmail);
 
 
+		driver.close();
+
 	}
 
 }
