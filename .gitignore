@@ -45,3 +45,6 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+leiloes/src/test/java/test/UsuariosSystemTest.java
+leiloes/build.xml
+leiloes/src/main/webapp/WEB-INF/web.xml
