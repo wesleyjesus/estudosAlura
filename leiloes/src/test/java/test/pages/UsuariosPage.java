@@ -1,9 +1,9 @@
 package test.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class UsuariosPage {
@@ -19,8 +19,12 @@ public class UsuariosPage {
 	}
 	
 	public void visita(){
-		driver.get("http://localhost:8080/usuarios/new");
-		wait.until(ExpectedConditions.visibilityOf(linkNovoUsuario));
+		driver.get("http://localhost:8080/usuarios");
+	}
+	
+	public void novoUsuario(){
+		//Clica no link de novo usuario
+		driver.findElement(By.linkText("Novo Usuário")).click();
 	}
 	
 	public boolean existeNaListagem(String nome, String email){
