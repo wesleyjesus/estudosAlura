@@ -4,6 +4,8 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import antlr.collections.List;
+
 public class LeiloesPage {
 	
 	private WebDriver driver;
@@ -29,11 +31,10 @@ public class LeiloesPage {
 				&& driver.getPageSource().contains(usado ? "Sim" : "Não");
     }
 	
-	public void excluiLeilao(int posicao) {
-		driver.findElements(By.tagName("button")).get(posicao-1).click();
+	public DetalhesDoLeilaoPage exibirLeilao(int posicao) {
+		List<WebElement> elementos = driver.findElements(By.linkText("exibir")).get(posicao - 1).click();
 		
-		Alert alert = driver.switchTo().alert();
-		alert.accept();
+		return new DetalhesDoLeilaoPage(driver);
 	}
 
 }

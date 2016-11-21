@@ -36,6 +36,7 @@ public class SeleniumBaseTest {
 	public void inicializa() throws IOException {
 		System.setProperty("webdriver.chrome.driver", "C:\\WebDrivers Selenium\\chromedriver.exe");
 		driver = new ChromeDriver();
+		driver.get("http://localhost:8080/apenas-teste/limpa");
 		this.usuarios = new UsuariosPage(driver);
 		this.leiloes = new LeiloesPage(driver);
 		
