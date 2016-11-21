@@ -1,23 +1,20 @@
 package app.utils;
 
 import java.io.IOException;
-import java.util.concurrent.TimeUnit;
 
 import org.junit.After;
-import org.junit.AfterClass;
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeDriverService;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.springframework.core.ConstantException;
 
-import com.sun.jna.platform.win32.SetupApi;
+import test.pages.LeiloesPage;
+import test.pages.UsuariosPage;
 
 public class SeleniumBaseTest {
 
 	protected WebDriver driver;
+	protected UsuariosPage usuarios;
+	protected LeiloesPage leiloes;
 
 	// @Before
 	// public void setUpTest() throws IOException {
@@ -36,10 +33,15 @@ public class SeleniumBaseTest {
 	// }
 
 	@Before
-	public void abriChrome() throws IOException {
+	public void inicializa() throws IOException {
 		System.setProperty("webdriver.chrome.driver", "C:\\WebDrivers Selenium\\chromedriver.exe");
 		driver = new ChromeDriver();
-
+		this.usuarios = new UsuariosPage(driver);
+		this.leiloes = new LeiloesPage(driver);
+		
+		// abrir as páginas iniciais dos testes
+		this.usuarios.visita();
+//		this.leiloes.visita();
 	}
 	
 	@After
