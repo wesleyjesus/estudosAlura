@@ -5,8 +5,8 @@ import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
-import app.utils.SeleniumBaseTest;
-import test.pages.NovoLeilaoPage;
+import pages.NovoLeilaoPage;
+import utils.SeleniumBaseTest;
 
 public class LeiloesTest extends SeleniumBaseTest {
 	

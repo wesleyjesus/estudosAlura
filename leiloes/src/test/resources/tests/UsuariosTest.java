@@ -3,8 +3,8 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import app.utils.SeleniumBaseTest;
-import test.pages.NovoUsuarioPage;
+import pages.NovoUsuarioPage;
+import utils.SeleniumBaseTest;
 
 public class UsuariosTest extends SeleniumBaseTest{
 
