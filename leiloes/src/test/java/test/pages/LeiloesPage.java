@@ -31,10 +31,10 @@ public class LeiloesPage {
 				&& driver.getPageSource().contains(usado ? "Sim" : "Não");
     }
 	
-	public DetalhesDoLeilaoPage exibirLeilao(int posicao) {
-		List<WebElement> elementos = driver.findElements(By.linkText("exibir")).get(posicao - 1).click();
-		
-		return new DetalhesDoLeilaoPage(driver);
-	}
+//	public DetalhesDoLeilaoPage exibirLeilao(int posicao) {
+//		List<WebElement> elementos = driver.findElements(By.linkText("exibir")).get(posicao - 1).click();
+//		
+//		return new DetalhesDoLeilaoPage(driver);
+//	}
 
 }
