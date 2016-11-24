@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("LogarGitHub.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("LogarNoSistema.feature");
 formatter.feature({
   "comments": [
     {
@@ -14,98 +14,72 @@ formatter.feature({
       "value": "#Keywords Summary : GitHub"
     }
   ],
-  "line": 4,
-  "name": "Logar no Github",
-  "description": "Eu quero logar no github.",
-  "id": "logar-no-github",
+  "line": 5,
+  "name": "Login Sucesso com Credenciais Válidas.",
+  "description": "Eu quero ter acesso a pagina de login do sistema realizar o login no mesmo.",
+  "id": "login-sucesso-com-credenciais-válidas.",
   "keyword": "Funcionalidade"
 });
-formatter.before({
-  "duration": 5327672409,
-  "status": "passed"
-});
 formatter.scenario({
-  "line": 7,
-  "name": "Loga no github",
+  "line": 8,
+  "name": "Login realizado com sucesso",
   "description": "",
-  "id": "logar-no-github;loga-no-github",
+  "id": "login-sucesso-com-credenciais-válidas.;login-realizado-com-sucesso",
   "type": "scenario",
   "keyword": "Cenário"
 });
 formatter.step({
-  "line": 8,
-  "name": "Eu estou na pagina inicial",
+  "line": 9,
+  "name": "eu estou na pagina de login do Unico",
   "keyword": "Dado "
 });
 formatter.step({
-  "line": 9,
-  "name": "o usuario navega para a pagina de login",
+  "line": 10,
+  "name": "checar que esta na pagina de login",
   "keyword": "Quando "
 });
 formatter.step({
-  "line": 10,
-  "name": "checa que está na pagina de login",
-  "keyword": "E "
-});
-formatter.step({
   "line": 11,
-  "name": "insere usuario e senha",
+  "name": "usuario entra com usuario e senha validos",
   "keyword": "E "
 });
 formatter.step({
   "line": 12,
-  "name": "clica no botão logar",
+  "name": "clica no botão \u0027Entrar\u0027",
   "keyword": "E "
 });
 formatter.step({
   "line": 13,
-  "name": "exibe mensagem de sucesso",
+  "name": "checa que esta na pagina inicial do sistema",
   "keyword": "Então "
 });
-formatter.match({
-  "location": "LogaGitHubSteps.eu_estou_na_pagina_inicial()"
+formatter.step({
+  "line": 14,
+  "name": "certifica que existe os icones dos modulos do sistema",
+  "keyword": "E "
 });
+formatter.match({});
 formatter.result({
-  "duration": 5591235465,
-  "status": "passed"
+  "status": "undefined"
 });
-formatter.match({
-  "location": "LogaGitHubSteps.o_usuario_navega_para_a_pagina_de_login()"
-});
+formatter.match({});
 formatter.result({
-  "duration": 733306586,
-  "status": "passed"
+  "status": "undefined"
 });
-formatter.match({
-  "location": "LogaGitHubSteps.checa_que_está_na_pagina_de_login()"
-});
+formatter.match({});
 formatter.result({
-  "duration": 41412626,
-  "status": "passed"
+  "status": "undefined"
 });
-formatter.match({
-  "location": "LogaGitHubSteps.insere_usuario_e_senha()"
-});
+formatter.match({});
 formatter.result({
-  "duration": 129656057,
-  "status": "passed"
+  "status": "undefined"
 });
-formatter.match({
-  "location": "LogaGitHubSteps.clica_no_botão_logar()"
-});
+formatter.match({});
 formatter.result({
-  "duration": 1410165965,
-  "status": "passed"
+  "status": "undefined"
 });
-formatter.match({
-  "location": "LogaGitHubSteps.exibe_mensagem_de_sucesso()"
-});
+formatter.match({});
 formatter.result({
-  "duration": 28458,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 2092256913,
-  "status": "passed"
+  "status": "undefined"
 });
 });
