@@ -10,10 +10,10 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 		plugin = {"pretty", "html:target/cucumber-html-report"},
 //		features = {"src/test/java/feature/"},
-				features = "Feature",
+				features = "Feature/estudos",
 //		glue = {"src/test/java/feature.steps"}
-		glue = {"stepDefinition"},
-		monochrome = false
+		glue = {"estudos.stepDefinition"},
+		monochrome = true
 		)
 public class CucumberRunner {
 			

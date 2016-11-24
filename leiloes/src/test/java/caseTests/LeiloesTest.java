@@ -1,4 +1,4 @@
-package tests;
+package caseTests;
 
 
 import static org.junit.Assert.assertTrue;

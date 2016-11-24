@@ -1,6 +1,7 @@
 package utils;
 
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 import org.junit.After;
 import org.junit.Before;
@@ -8,6 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import pages.LeiloesPage;
+import pages.PaginaInicialGitHubPage;
 import pages.UsuariosPage;
 
 public class SeleniumBaseTest {
@@ -15,6 +17,7 @@ public class SeleniumBaseTest {
 	protected WebDriver driver;
 	protected UsuariosPage usuarios;
 	protected LeiloesPage leiloes;
+	
 
 	// @Before
 	// public void setUpTest() throws IOException {
@@ -31,17 +34,20 @@ public class SeleniumBaseTest {
 	// driver.get("http://localhost:8080/usuarios/new");
 	//
 	// }
+	
+	
 
 	@Before
 	public void inicializa() throws IOException {
 		System.setProperty("webdriver.chrome.driver", "C:\\WebDrivers Selenium\\chromedriver.exe");
 		driver = new ChromeDriver();
-		driver.get("http://localhost:8080/apenas-teste/limpa");
-		this.usuarios = new UsuariosPage(driver);
-		this.leiloes = new LeiloesPage(driver);
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+//		driver.get("http://localhost:8080/apenas-teste/limpa");
+//		this.usuarios = new UsuariosPage(driver);
+//		this.leiloes = new LeiloesPage(driver);
 		
 		// abrir as páginas iniciais dos testes
-		this.usuarios.visita();
+//		this.usuarios.visita();
 //		this.leiloes.visita();
 	}
 	

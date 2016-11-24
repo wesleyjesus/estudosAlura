@@ -5,45 +5,38 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class LogarGitHubPage {
-	
-	private static final String URL = "https://github.com/";
+
+public class TelaLoginGitHubPage {
 	
 	private WebDriver driver;
 	
-	public LogarGitHubPage(WebDriver driver){
+	public TelaLoginGitHubPage (WebDriver driver){
 		this.driver = driver;
 	}
 	
-	public void acessaPaginaInicial(){
-		driver.get(URL);
-	}
-	
-	public void clicaNoLinkLogin(String link){
-		driver.findElement(By.linkText(link)).click();
-	}
-	
-	public void verificaPaginaLogin(){
-		Assert.assertEquals("Sign in to GitHub", driver.findElement(By.xpath("\\h1")).getText());
+	public void verificaSeEstaNaPaginaLogin(){
+		Assert.assertEquals("Não foi encontrada a mensagem 'Sign in to GitHub' na pagina de login!", "Sign in to GitHub", driver.findElement(By.xpath(".//*[@id='login']/form/div[2]/h1")).getText());
 	}
 	
 	public void logaGitHub(String usuario, String senha) {
+		// pega os elementos usuario e senha do formuário de login
 		WebElement txtUsuario = driver.findElement(By.name("login"));
 		WebElement txtSenha = driver.findElement(By.name("password"));
 				
+		// preenche usuário e senha
 		txtUsuario.sendKeys(usuario);
 		txtSenha.sendKeys(senha);
-		
-		
 	}
 	
 	public void clicaLogar(){
+		// submete o formulário de login
 		driver.findElement(By.name("commit")).click();
 	}
 	
 	public String mensageLoginSucess(){
-		String mensagem = "Login realizado com sucesso";
+		String mensagem = "Login realizado com sucesso!";
 		return mensagem;
 	}
+	
 	
 }
