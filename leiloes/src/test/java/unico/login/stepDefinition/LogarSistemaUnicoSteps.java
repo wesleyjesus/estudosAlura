@@ -34,8 +34,7 @@ public class LogarSistemaUnicoSteps {
 
 	@Quando("^checar que esta na pagina de login$")
 	public void checar_que_esta_na_pagina_de_login() throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
+	    loginUnico.verificaTituloTelaDeLogin();
 	}
 
 	@Quando("^usuario entra com usuario e senha validos$")

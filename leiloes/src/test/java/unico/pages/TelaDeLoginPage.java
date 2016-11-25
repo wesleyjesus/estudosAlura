@@ -30,13 +30,17 @@ public class TelaDeLoginPage {
 				+ "/cas/login?service=http%3A%2F%2Funico-homologacao-02.mpf.mp.br%2Funico%2Fj_spring_cas_security_check");
 	}
 	
+	public void verificaTituloTelaDeLogin(){
+		assertEquals("O título da pagina não foi encontrado!", "Ministério Público Federal", driver.getTitle());
+	}
+	
 	
 
 
 	@Test
 	public void testLogarUnico() throws Exception {
 		
-		assertEquals("Ministério Público Federal", driver.getTitle());
+		
 		driver.findElement(By.id("username")).clear();
 		driver.findElement(By.id("username")).sendKeys("wesleyjesus@mpf.mp.br");
 		driver.findElement(By.id("password")).clear();
