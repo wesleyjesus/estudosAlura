@@ -1,4 +1,4 @@
-package unico.stepDefinitions.login;
+package stepDefinitions.unico.login;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -11,7 +11,7 @@ import cucumber.api.java.Before;
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Então;
 import cucumber.api.java.pt.Quando;
-import unico.pages.login.TelaDeLoginPage;
+import pages.unico.login.TelaDeLoginPage;
 
 public class LogarSistemaUnicoSteps {
 	
