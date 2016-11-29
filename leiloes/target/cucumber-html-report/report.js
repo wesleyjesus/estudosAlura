@@ -11,7 +11,7 @@ formatter.feature({
     },
     {
       "line": 3,
-      "value": "#Keywords Summary : GitHub"
+      "value": "#Keywords Summary : Logar no Unico"
     }
   ],
   "line": 5,
@@ -21,7 +21,7 @@ formatter.feature({
   "keyword": "Funcionalidade"
 });
 formatter.before({
-  "duration": 4691877165,
+  "duration": 4690002216,
   "status": "passed"
 });
 formatter.scenario({
@@ -39,66 +39,103 @@ formatter.step({
 });
 formatter.step({
   "line": 10,
-  "name": "checar que esta na pagina de login",
-  "keyword": "Quando "
+  "name": "checo que o título da pagina é \"Ministério Público Federal\"",
+  "keyword": "E "
 });
 formatter.step({
   "line": 11,
-  "name": "usuario entra com usuario e senha validos",
-  "keyword": "E "
-});
-formatter.step({
-  "line": 12,
-  "name": "clica no botão \u0027Entrar\u0027",
-  "keyword": "E "
-});
-formatter.step({
-  "line": 13,
-  "name": "checa que esta na pagina inicial do sistema",
-  "keyword": "Então "
+  "name": "o usuario entra com usuario e senha validos:",
+  "rows": [
+    {
+      "cells": [
+        "usuario",
+        "senha"
+      ],
+      "line": 12
+    },
+    {
+      "cells": [
+        "wesleyjesus@mpf.mp.br",
+        "wesleyjesus@mpf.mp.br"
+      ],
+      "line": 13
+    }
+  ],
+  "keyword": "Quando "
 });
 formatter.step({
   "line": 14,
-  "name": "certifica que existe os icones dos modulos do sistema",
+  "name": "clica no botão \u0027Entrar\u0027 com name \u003d \"Submit\"",
+  "keyword": "E "
+});
+formatter.step({
+  "line": 15,
+  "name": "vejo o link \"Único\"",
+  "keyword": "Então "
+});
+formatter.step({
+  "line": 16,
+  "name": "certifico que existe os icones dos modulos do sistema",
   "keyword": "E "
 });
 formatter.match({
   "location": "LogarSistemaUnicoSteps.eu_estou_na_pagina_de_login_do_Unico()"
 });
 formatter.result({
-  "duration": 450896537,
+  "duration": 396941487,
   "status": "passed"
 });
 formatter.match({
-  "location": "LogarSistemaUnicoSteps.checar_que_esta_na_pagina_de_login()"
+  "arguments": [
+    {
+      "val": "Ministério Público Federal",
+      "offset": 32
+    }
+  ],
+  "location": "LogarSistemaUnicoSteps.checo_que_o_título_da_pagina_é(String)"
 });
 formatter.result({
-  "duration": 22745711,
-  "error_message": "org.junit.ComparisonFailure: O título da pagina não foi encontrado! expected:\u003cMinistério Público [teste ]Federal\u003e but was:\u003cMinistério Público []Federal\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:115)\r\n\tat unico.pages.TelaDeLoginPage.verificaTituloTelaDeLogin(TelaDeLoginPage.java:34)\r\n\tat unico.login.stepDefinition.LogarSistemaUnicoSteps.checar_que_esta_na_pagina_de_login(LogarSistemaUnicoSteps.java:37)\r\n\tat ✽.Quando checar que esta na pagina de login(LogarNoSistema.feature:10)\r\n",
-  "status": "failed"
+  "duration": 14777527,
+  "status": "passed"
 });
 formatter.match({
-  "location": "LogarSistemaUnicoSteps.usuario_entra_com_usuario_e_senha_validos()"
+  "location": "LogarSistemaUnicoSteps.o_usuario_entra_com_usuario_e_senha_validos(DataTable)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 153823725,
+  "status": "passed"
 });
 formatter.match({
-  "location": "LogarSistemaUnicoSteps.clica_no_botão_Entrar()"
+  "arguments": [
+    {
+      "val": "Submit",
+      "offset": 36
+    }
+  ],
+  "location": "LogarSistemaUnicoSteps.clica_no_botão_Entrar_com_name(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 48864837,
+  "status": "passed"
 });
 formatter.match({
-  "location": "LogarSistemaUnicoSteps.checa_que_esta_na_pagina_inicial_do_sistema()"
+  "arguments": [
+    {
+      "val": "Único",
+      "offset": 13
+    }
+  ],
+  "location": "LogarSistemaUnicoSteps.vejo_o_link(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 3905336770,
+  "status": "passed"
 });
 formatter.match({
-  "location": "LogarSistemaUnicoSteps.certifica_que_existe_os_icones_dos_modulos_do_sistema()"
+  "location": "LogarSistemaUnicoSteps.certifico_que_existe_os_icones_dos_modulos_do_sistema()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 129867858,
+  "status": "passed"
 });
 });

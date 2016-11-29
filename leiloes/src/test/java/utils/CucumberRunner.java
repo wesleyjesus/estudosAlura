@@ -9,10 +9,8 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		plugin = {"pretty", "html:target/cucumber-html-report"},
-//		features = {"src/test/java/feature/"},
-				features = "Feature/unico",
-//		glue = {"src/test/java/feature.steps"}
-		glue = {"unico.documentos.stepDefinition", "unico.login.stepDefinition"},
+		features = {"src/test/resources/features/unico/login"},
+		glue = {"unico.stepDefinitions"},
 		monochrome = true
 		)
 public class CucumberRunner {
