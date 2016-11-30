@@ -9,7 +9,7 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		plugin = {"pretty", "html:target/cucumber-html-report"},
-		features = {"src/test/resources/features/unico/login"},
+		features = {"./features/unico"},
 		glue = {"stepDefinitions.unico"},
 		monochrome = true
 		)

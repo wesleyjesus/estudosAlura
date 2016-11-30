@@ -2,11 +2,11 @@ package stepDefinitions.unico.login;
 
 import static org.junit.Assert.fail;
 
+import java.io.File;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
 
 import cucumber.api.DataTable;
@@ -16,6 +16,7 @@ import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Então;
 import cucumber.api.java.pt.Quando;
 import pages.unico.login.TelaDeLoginPage;
+import utils.PhantomJSUtility;
 
 public class LogarSistemaUnicoSteps {
 	
@@ -25,11 +26,22 @@ public class LogarSistemaUnicoSteps {
 	
 	@Before
 	public void setUp() throws Exception {
-//		System.setProperty("webdriver.chrome.driver", "C:\\WebDrivers Selenium\\chromedriver.exe");
+		// System.setProperty("webdriver.chrome.driver", "C:\\WebDrivers
+		// Selenium\\chromedriver.exe");
+		
+		File src = new File("C:\\phantomjs2\\bin\\phantomjs.exe");
+		
+		System.out.println("======= Sessão do navegador iniciada");
+		
+		System.setProperty("phantomjs.binary.path", src.getAbsolutePath());
+		
 		driver = new PhantomJSDriver();
+		
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		
+
+		// PhantomJSUtility.captureScreenshot(driver, "PreencheLoginESenha");
+
 		this.loginUnico = new TelaDeLoginPage(driver);
 	}
 	

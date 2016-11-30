@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("LogarNoSistema.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("login/LogarNoSistema.feature");
 formatter.feature({
   "comments": [
     {
@@ -21,7 +21,7 @@ formatter.feature({
   "keyword": "Funcionalidade"
 });
 formatter.before({
-  "duration": 2388183016,
+  "duration": 3078486138,
   "status": "passed"
 });
 formatter.scenario({
@@ -82,7 +82,7 @@ formatter.match({
   "location": "LogarSistemaUnicoSteps.eu_estou_na_pagina_de_login_do_Unico()"
 });
 formatter.result({
-  "duration": 220274082,
+  "duration": 355634294,
   "status": "passed"
 });
 formatter.match({
@@ -95,14 +95,14 @@ formatter.match({
   "location": "LogarSistemaUnicoSteps.checo_que_o_título_da_pagina_é(String)"
 });
 formatter.result({
-  "duration": 9083169,
+  "duration": 21111487,
   "status": "passed"
 });
 formatter.match({
   "location": "LogarSistemaUnicoSteps.o_usuario_entra_com_usuario_e_senha_validos(DataTable)"
 });
 formatter.result({
-  "duration": 106791850,
+  "duration": 149301734,
   "status": "passed"
 });
 formatter.match({
@@ -115,7 +115,7 @@ formatter.match({
   "location": "LogarSistemaUnicoSteps.clica_no_botão_Entrar_com_name(String)"
 });
 formatter.result({
-  "duration": 1240071378,
+  "duration": 1123946303,
   "status": "passed"
 });
 formatter.match({
@@ -128,22 +128,22 @@ formatter.match({
   "location": "LogarSistemaUnicoSteps.vejo_o_link(String)"
 });
 formatter.result({
-  "duration": 17641035,
+  "duration": 39674368,
   "status": "passed"
 });
 formatter.match({
   "location": "LogarSistemaUnicoSteps.certifico_que_existe_os_icones_dos_modulos_do_sistema()"
 });
 formatter.result({
-  "duration": 101733827,
+  "duration": 117470522,
   "status": "passed"
 });
 formatter.after({
-  "duration": 957852136,
+  "duration": 990303355,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1615550087,
+  "duration": 2188279120,
   "status": "passed"
 });
 formatter.scenario({
@@ -199,7 +199,7 @@ formatter.match({
   "location": "LogarSistemaUnicoSteps.eu_estou_na_pagina_de_login_do_Unico()"
 });
 formatter.result({
-  "duration": 245221773,
+  "duration": 223874693,
   "status": "passed"
 });
 formatter.match({
@@ -212,14 +212,14 @@ formatter.match({
   "location": "LogarSistemaUnicoSteps.checo_que_o_título_da_pagina_é(String)"
 });
 formatter.result({
-  "duration": 6397873,
+  "duration": 3172811,
   "status": "passed"
 });
 formatter.match({
   "location": "LogarSistemaUnicoSteps.o_usuario_entra_com_usuario_e_senha_invalidos(DataTable)"
 });
 formatter.result({
-  "duration": 105988500,
+  "duration": 124416090,
   "status": "passed"
 });
 formatter.match({
@@ -232,7 +232,7 @@ formatter.match({
   "location": "LogarSistemaUnicoSteps.clica_no_botão_Entrar_com_name(String)"
 });
 formatter.result({
-  "duration": 143884956,
+  "duration": 150104151,
   "status": "passed"
 });
 formatter.match({
@@ -245,11 +245,11 @@ formatter.match({
   "location": "LogarSistemaUnicoSteps.vejo_a_mensagem(String)"
 });
 formatter.result({
-  "duration": 28503049,
+  "duration": 48403448,
   "status": "passed"
 });
 formatter.after({
-  "duration": 952406900,
+  "duration": 916801063,
   "status": "passed"
 });
 });
