@@ -1,9 +1,7 @@
 package pages.unico.login;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.fail;
 
-import org.junit.After;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
@@ -13,7 +11,7 @@ public class TelaDeLoginPage {
 	
 	private WebDriver driver;
 	private String baseUrl;
-	private StringBuffer verificationErrors = new StringBuffer();
+	
 	
 	
 	public TelaDeLoginPage(WebDriver driver) {
@@ -60,6 +58,11 @@ public class TelaDeLoginPage {
 
 	}
 	
+	public void verificaMensagemErroLogin(String mensagem) {
+		assertEquals("A mensagem de erro não foi encontrada!", mensagem, driver.findElement(By.cssSelector("#msg")).getText());
+
+	}
+	
 	public void verificaIconeDosModulosTelaInicial() {
 		
 		assertEquals("Não foi encontrado o módulo 'Módulo Operacional'!","Módulo Operacional", driver.findElement(By.id("unico-classico")).getText());
@@ -71,17 +74,6 @@ public class TelaDeLoginPage {
 				driver.findElement(By.cssSelector("a[title=\"Acessar o sistema Gerenciador Administrativo\"] > p"))
 						.getText());
 
-	}
-
-
-
-	@After
-	public void tearDown() throws Exception {
-		driver.quit();
-		String verificationErrorString = verificationErrors.toString();
-		if (!"".equals(verificationErrorString)) {
-			fail(verificationErrorString);
-		}
 	}
 
 	
