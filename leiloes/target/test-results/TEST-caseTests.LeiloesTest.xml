@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="2" failures="0" hostname="PGRP00086946" name="caseTests.LeiloesTest" tests="2" time="6.541" timestamp="2016-11-30T19:33:20">
+<testsuite errors="2" failures="0" hostname="PGRP00086946" name="caseTests.LeiloesTest" tests="2" time="8.26" timestamp="2016-12-02T20:55:28">
   <properties>
     <property name="file.encoding.pkg" value="sun.io" />
     <property name="ivy.retrieve.pattern.ivy.instance" value="C:\Users\wesleyjesus\git\estudosAlura\leiloes/lib/[artifact]-[revision](-[classifier]).[ext]" />
@@ -66,7 +66,7 @@
     <property name="ant.project.default-target" value="war" />
     <property name="ivy.targets.copied" value="false" />
     <property name="ivy.parents.count" value="0" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner caseTests.LeiloesTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=true showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\wesleyjesus\git\estudosAlura\leiloes\target\test-results\TEST-caseTests.LeiloesTest.xml crashfile=C:\Users\wesleyjesus\git\estudosAlura\leiloes\junitvmwatcher1280847600455184262.properties propsfile=C:\Users\wesleyjesus\git\estudosAlura\leiloes\junit4424149030974231189.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner caseTests.LeiloesTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=true showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\wesleyjesus\git\estudosAlura\leiloes\target\test-results\TEST-caseTests.LeiloesTest.xml crashfile=C:\Users\wesleyjesus\git\estudosAlura\leiloes\junitvmwatcher8117743843444241714.properties propsfile=C:\Users\wesleyjesus\git\estudosAlura\leiloes\junit637868609757314928.properties" />
     <property name="ivy.shared.default.artifact.pattern" value="[organisation]/[module]/[revision]/[type]s/[artifact].[ext]" />
     <property name="ant.file" value="C:\Users\wesleyjesus\git\estudosAlura\leiloes\build.xml" />
     <property name="ivy.distrib.dir.ivy.instance" value="C:\Users\wesleyjesus\git\estudosAlura\leiloes/distrib" />
@@ -118,7 +118,7 @@
     <property name="java.runtime.version.ivy.instance" value="1.8.0_102-b14" />
     <property name="ivy.report.output.pattern" value="[organisation]-[module]-[conf].[ext]" />
     <property name="ivy.version" value="2.4.0" />
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_102\jre\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:/Program Files/Java/jdk1.8.0_102/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_102/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_102/bin/../jre/lib/amd64;C:\Program Files (x86)\Common Files\Intel\Shared Files\cpp\bin\Intel64;C:\ProgramData\Oracle\Java\javapath;C:\Oracle\product\11.2.0\client_1;C:\Python27\;C:\Program Files (x86)\Borland\Delphi5\Bin;C:\orant\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\orant\jdk\bin;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\Novell\ZENworks\bin;C:\phantomjs;C:\casperjs\batchbin;C:\x64;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;%PATH%;C:\Program Files\Java\jdk1.8.0_102\bin;C:\Novell\GroupWise;C:\Program Files\Novell\iPrint;;C:\Users\wesleyjesus\Desktop;;." />
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_102\jre\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:/Program Files/Java/jdk1.8.0_102/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_102/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_102/bin/../jre/lib/amd64;C:\Program Files (x86)\Common Files\Intel\Shared Files\cpp\bin\Intel64;C:\ProgramData\Oracle\Java\javapath;C:\Oracle\product\11.2.0\client_1;C:\Python27\;C:\Program Files (x86)\Borland\Delphi5\Bin;C:\orant\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\orant\jdk\bin;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\Novell\ZENworks\bin;C:\phantomjs2\bin;C:\casperjs\batchbin;C:\x64;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;%PATH%;C:\Program Files\Java\jdk1.8.0_102\bin;C:\Novell\GroupWise;C:\Program Files\Novell\iPrint;;C:\Users\wesleyjesus\Desktop;;." />
     <property name="ivy.conf.url" value="jar:file:/C:/Users/wesleyjesus/git/estudosAlura/leiloes/ivy-2.4.0.jar!/org/apache/ivy/core/settings/ivysettings.xml" />
     <property name="java.vm.name.ivy.instance" value="Java HotSpot(TM) 64-Bit Server VM" />
     <property name="os.version.ivy.instance" value="6.1" />
@@ -140,7 +140,7 @@
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_102\jre\bin" />
     <property name="build.dir" value="src/main/webapp/WEB-INF/classes" />
     <property name="ivy.default.always.check.exact.revision.ivy.instance" value="false" />
-    <property name="java.library.path.ivy.instance" value="C:\Users\wesleyjesus\Documents\Desenvolvimento\jee-neon\eclipse;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:/Program Files/Java/jdk1.8.0_102/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_102/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_102/bin/../jre/lib/amd64;C:\Program Files (x86)\Common Files\Intel\Shared Files\cpp\bin\Intel64;C:\ProgramData\Oracle\Java\javapath;C:\Oracle\product\11.2.0\client_1;C:\Python27\;C:\Program Files (x86)\Borland\Delphi5\Bin;C:\orant\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\orant\jdk\bin;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\Novell\ZENworks\bin;C:\phantomjs;C:\casperjs\batchbin;C:\x64;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;%PATH%;C:\Program Files\Java\jdk1.8.0_102\bin;C:\Novell\GroupWise;C:\Program Files\Novell\iPrint;;C:\Users\wesleyjesus\Desktop;;.;C:\Users\wesleyjesus\Documents\Desenvolvimento\jee-neon\eclipse\configuration\org.eclipse.osgi\1175\0\.cp" />
+    <property name="java.library.path.ivy.instance" value="C:\Users\wesleyjesus\Documents\Desenvolvimento\jee-neon\eclipse;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:/Program Files/Java/jdk1.8.0_102/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_102/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_102/bin/../jre/lib/amd64;C:\Program Files (x86)\Common Files\Intel\Shared Files\cpp\bin\Intel64;C:\ProgramData\Oracle\Java\javapath;C:\Oracle\product\11.2.0\client_1;C:\Python27\;C:\Program Files (x86)\Borland\Delphi5\Bin;C:\orant\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\orant\jdk\bin;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\Novell\ZENworks\bin;C:\phantomjs2\bin;C:\casperjs\batchbin;C:\x64;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;%PATH%;C:\Program Files\Java\jdk1.8.0_102\bin;C:\Novell\GroupWise;C:\Program Files\Novell\iPrint;;C:\Users\wesleyjesus\Desktop;;.;C:\Users\wesleyjesus\Documents\Desenvolvimento\jee-neon\eclipse\configuration\org.eclipse.osgi\1175\0\.cp" />
     <property name="awt.toolkit.ivy.instance" value="sun.awt.windows.WToolkit" />
     <property name="ivy.basedir" value="C:\Users\wesleyjesus\git\estudosAlura\leiloes" />
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
@@ -179,7 +179,7 @@
     <property name="ivy.shared.default.ivy.pattern.ivy.instance" value="[organisation]/[module]/[revision]/[type]s/[artifact].[ext]" />
     <property name="ivy.publish.src.artifacts.pattern" value="C:\Users\wesleyjesus\git\estudosAlura\leiloes/distrib/[type]s/[artifact]-[revision](-[classifier]).[ext]" />
     <property name="java.vm.info.ivy.instance" value="mixed mode" />
-    <property name="sun.java.command.ivy.instance" value="org.eclipse.ant.internal.launching.remote.InternalAntRunner -Dorg.eclipse.ant.core.ANT_PROCESS_ID=1480534390910 -Declipse.connect.port=54881 -Declipse.pdebuild.home=/C:/Users/wesleyjesus/Documents/Desenvolvimento/jee-neon/eclipse/../../../../.p2/pool/plugins/org.eclipse.pde.build_3.9.200.v20160204-0642/./ -Declipse.pdebuild.scripts=/C:/Users/wesleyjesus/Documents/Desenvolvimento/jee-neon/eclipse/../../../../.p2/pool/plugins/org.eclipse.pde.build_3.9.200.v20160204-0642/scripts/ -Declipse.pdebuild.templates=/C:/Users/wesleyjesus/Documents/Desenvolvimento/jee-neon/eclipse/../../../../.p2/pool/plugins/org.eclipse.pde.build_3.9.200.v20160204-0642/templates/ -Dant.home=C:\Users\wesleyjesus\.p2\pool\plugins\org.apache.ant_1.9.6.v201510161327 -logger org.eclipse.ant.internal.launching.remote.logger.RemoteAntBuildLogger -inputhandler org.eclipse.ant.internal.ui.antsupport.inputhandler.ProxyInputHandler -buildfile C:\Users\wesleyjesus\git\estudosAlura\leiloes\build.xml" />
+    <property name="sun.java.command.ivy.instance" value="org.eclipse.ant.internal.launching.remote.InternalAntRunner -Dorg.eclipse.ant.core.ANT_PROCESS_ID=1480712101876 -Declipse.connect.port=62021 -Declipse.pdebuild.home=/C:/Users/wesleyjesus/Documents/Desenvolvimento/jee-neon/eclipse/../../../../.p2/pool/plugins/org.eclipse.pde.build_3.9.200.v20160204-0642/./ -Declipse.pdebuild.scripts=/C:/Users/wesleyjesus/Documents/Desenvolvimento/jee-neon/eclipse/../../../../.p2/pool/plugins/org.eclipse.pde.build_3.9.200.v20160204-0642/scripts/ -Declipse.pdebuild.templates=/C:/Users/wesleyjesus/Documents/Desenvolvimento/jee-neon/eclipse/../../../../.p2/pool/plugins/org.eclipse.pde.build_3.9.200.v20160204-0642/templates/ -Dant.home=C:\Users\wesleyjesus\.p2\pool\plugins\org.apache.ant_1.9.6.v201510161327 -logger org.eclipse.ant.internal.launching.remote.logger.RemoteAntBuildLogger -inputhandler org.eclipse.ant.internal.ui.antsupport.inputhandler.ProxyInputHandler -buildfile C:\Users\wesleyjesus\git\estudosAlura\leiloes\build.xml" />
     <property name="ivy.distrib.dir" value="C:\Users\wesleyjesus\git\estudosAlura\leiloes/distrib" />
     <property name="sun.cpu.endian" value="little" />
     <property name="ivy.revision" value="working@PGRP00086946" />
@@ -223,28 +223,28 @@
     <property name="sun.arch.data.model" value="64" />
     <property name="ivy.buildlist.ivyfilepath" value="ivy.xml" />
   </properties>
-  <testcase classname="caseTests.LeiloesTest" name="deveAdicionarUmLeilao" time="3.537">
+  <testcase classname="caseTests.LeiloesTest" name="deveAdicionarUmLeilao" time="5.109">
     <error type="java.lang.NullPointerException">java.lang.NullPointerException
 	at caseTests.LeiloesTest.deveAdicionarUmLeilao(LeiloesTest.java:16)
 </error>
   </testcase>
-  <testcase classname="caseTests.LeiloesTest" name="naoDeveAdicionarLeilaoSemNomeOuValor" time="2.821">
+  <testcase classname="caseTests.LeiloesTest" name="naoDeveAdicionarLeilaoSemNomeOuValor" time="2.756">
     <error type="java.lang.NullPointerException">java.lang.NullPointerException
 	at caseTests.LeiloesTest.naoDeveAdicionarLeilaoSemNomeOuValor(LeiloesTest.java:29)
 </error>
   </testcase>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed) on port 16174
+  <system-err><![CDATA[Starting ChromeDriver 2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed) on port 10115
 Only local connections are allowed.
-nov 30, 2016 5:33:22 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+dez 02, 2016 6:55:30 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMAÇÕES: Attempting bi-dialect session, assuming Postel's Law holds true on the remote end
-nov 30, 2016 5:33:24 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+dez 02, 2016 6:55:33 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMAÇÕES: Detected dialect: OSS
-Starting ChromeDriver 2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed) on port 20430
+Starting ChromeDriver 2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed) on port 31101
 Only local connections are allowed.
-nov 30, 2016 5:33:25 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+dez 02, 2016 6:55:34 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMAÇÕES: Attempting bi-dialect session, assuming Postel's Law holds true on the remote end
-nov 30, 2016 5:33:27 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+dez 02, 2016 6:55:36 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMAÇÕES: Detected dialect: OSS
 ]]></system-err>
 </testsuite>

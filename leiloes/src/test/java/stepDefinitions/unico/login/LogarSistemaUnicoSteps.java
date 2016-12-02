@@ -10,19 +10,27 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
 
 import cucumber.api.DataTable;
+import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Então;
 import cucumber.api.java.pt.Quando;
 import pages.unico.login.TelaDeLoginPage;
+import utils.GuardarCenarioCucumber;
 import utils.PhantomJSUtility;
 
 public class LogarSistemaUnicoSteps {
 	
 	private WebDriver driver;
 	private TelaDeLoginPage loginUnico;
+	private Scenario scenario;
 	private StringBuffer verificationErrors = new StringBuffer();
+	
+	@Before
+	public void guardarCenarioCucumber(Scenario scenario){
+		this.scenario = scenario;
+	}
 	
 	@Before
 	public void setUp() throws Exception {
@@ -31,7 +39,7 @@ public class LogarSistemaUnicoSteps {
 		
 		File src = new File("C:\\phantomjs2\\bin\\phantomjs.exe");
 		
-		System.out.println("======= Sessão do navegador iniciada");
+		System.out.println("### Sessão do navegador iniciada ###");
 		
 		System.setProperty("phantomjs.binary.path", src.getAbsolutePath());
 		
@@ -47,7 +55,8 @@ public class LogarSistemaUnicoSteps {
 	
 	@Dado("^eu estou na pagina de login do Unico$")
 	public void eu_estou_na_pagina_de_login_do_Unico() throws Throwable {
-	    loginUnico.abriTelaLogin();
+	    scenario.write("Abrir tela de login do Unico!");
+		loginUnico.abriTelaLogin();
 	}
 
 	@Dado("^checo que o título da pagina é \"([^\"]*)\"$")
@@ -55,11 +64,10 @@ public class LogarSistemaUnicoSteps {
 	    loginUnico.verificaTituloTelaDeLogin(tituloPaginaLogin);
 	}
 
-	@Quando("^o usuario entra com usuario e senha validos:$")
-	public void o_usuario_entra_com_usuario_e_senha_validos(DataTable entradaDeDados) throws Throwable {
-		List<List<String>> dados = entradaDeDados.raw();
+	@Quando("^o usuario entra com \"([^\"]*)\" e \"([^\"]*)\" validos$")
+	public void o_usuario_entra_com_e_validos(String usuario, String senha) throws Throwable {
 		
-		loginUnico.logaSistemaUnico(dados.get(1).get(0), dados.get(1).get(1));
+		loginUnico.logaSistemaUnico(usuario, senha);;
 		
 	}
 
