@@ -1,4 +1,275 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("login/LogarNoSistema.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("documentos/IncluirDocumentoExpedido.feature");
+formatter.feature({
+  "comments": [
+    {
+      "line": 1,
+      "value": "#language: pt"
+    },
+    {
+      "line": 2,
+      "value": "#Author: Wesley Pereira de Jesus"
+    },
+    {
+      "line": 3,
+      "value": "#Keywords Summary : Incluir, documento, expedido."
+    }
+  ],
+  "line": 4,
+  "name": "Manter Documento expedido",
+  "description": "\r\n Como um usuário do Unico\r\n Eu quero acessar o formulário de inclusão de documento expedido\r\n Para que eu possa incluir as informações do documento no sistema.",
+  "id": "manter-documento-expedido",
+  "keyword": "Funcionalidade"
+});
+formatter.before({
+  "duration": 259845,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 4610915929,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 151981052,
+  "error_message": "org.openqa.selenium.SessionNotCreatedException: Unable to create new remote session. desired capabilities \u003d Capabilities [{browserName\u003dchrome, version\u003d, platform\u003dANY}], required capabilities \u003d Capabilities [{}]\nBuild info: version: \u00273.0.1\u0027, revision: \u00271969d75\u0027, time: \u00272016-10-18 09:49:13 -0700\u0027\nSystem info: host: \u0027PGRP00086946\u0027, ip: \u002710.222.122.226\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u00271.8.0_102\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:91)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:141)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:241)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:128)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:155)\r\n\tat stepDefinitions.unico.documentos.IncluirDocumentoEletronicoExpedidoSteps.setUp(IncluirDocumentoEletronicoExpedidoSteps.java:34)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:40)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:34)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)\r\n\tat cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)\r\n\tat cucumber.runtime.Runtime.runHooks(Runtime.java:212)\r\n\tat cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)\r\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:100)\r\n\tat org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)\r\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)\r\n",
+  "status": "failed"
+});
+formatter.background({
+  "line": 10,
+  "name": "",
+  "description": "",
+  "type": "background",
+  "keyword": "Fundo"
+});
+formatter.step({
+  "line": 11,
+  "name": "eu estou na pagina de login do Unico",
+  "keyword": "Dado "
+});
+formatter.step({
+  "line": 12,
+  "name": "checo que o título da pagina é \"Ministério Público Federal\"",
+  "keyword": "E "
+});
+formatter.step({
+  "line": 13,
+  "name": "o usuario entra com \"wesleyjesus@mpf.mp.br\" e \"wesleyjesus@mpf.mp.br\" validos",
+  "keyword": "Quando "
+});
+formatter.step({
+  "line": 14,
+  "name": "clica no botão \u0027Entrar\u0027 com name \u003d \"Submit\"",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "LogarSistemaUnicoSteps.eu_estou_na_pagina_de_login_do_Unico()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Ministério Público Federal",
+      "offset": 32
+    }
+  ],
+  "location": "LogarSistemaUnicoSteps.checo_que_o_título_da_pagina_é(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "wesleyjesus@mpf.mp.br",
+      "offset": 21
+    },
+    {
+      "val": "wesleyjesus@mpf.mp.br",
+      "offset": 47
+    }
+  ],
+  "location": "LogarSistemaUnicoSteps.o_usuario_entra_com_e_validos(String,String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Submit",
+      "offset": 36
+    }
+  ],
+  "location": "LogarSistemaUnicoSteps.clica_no_botão_Entrar_com_name(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.scenario({
+  "line": 16,
+  "name": "Incluir documento expedido sem realizar upload e ckeditor, dados obrigatórios, formato eletrônico e natureza Administrativa",
+  "description": "",
+  "id": "manter-documento-expedido;incluir-documento-expedido-sem-realizar-upload-e-ckeditor,-dados-obrigatórios,-formato-eletrônico-e-natureza-administrativa",
+  "type": "scenario",
+  "keyword": "Cenário"
+});
+formatter.step({
+  "line": 17,
+  "name": "acesso a tela de incluir documento expedido",
+  "keyword": "Dado "
+});
+formatter.step({
+  "line": 18,
+  "name": "certifico que o titulo da pagina é \"Documentos - Incluir Documento Expedido — Sistema Único\"",
+  "keyword": "E "
+});
+formatter.step({
+  "line": 19,
+  "name": "certifico que a url do navegador contem “/incluir/expedido”",
+  "keyword": "E "
+});
+formatter.step({
+  "line": 20,
+  "name": "seleciono o formato eletrônico",
+  "keyword": "Quando "
+});
+formatter.step({
+  "line": 21,
+  "name": "seleciono natureza “Administrativa”",
+  "keyword": "E "
+});
+formatter.step({
+  "line": 22,
+  "name": "certifico que os campos \"assunto\" e \"descricaoComplementoAssunto\" estão sendo exibidos",
+  "keyword": "E "
+});
+formatter.step({
+  "line": 23,
+  "name": "preenche os seguintes campos obrigatórios:",
+  "rows": [
+    {
+      "cells": [
+        "tipoDocumento",
+        "assunto",
+        "resumo",
+        "responsavel assinatura"
+      ],
+      "line": 24
+    },
+    {
+      "cells": [
+        "OFÍCIO",
+        "link\u003d03.05.07 FÉRIAS",
+        "Teste documento expedido, formato eletrônico, não digitalizado e apenas campos obrigatórios.",
+        "Wesley Pereira de Jesus - SERVIDOR"
+      ],
+      "line": 25
+    }
+  ],
+  "keyword": "E "
+});
+formatter.step({
+  "line": 26,
+  "name": "certifico que o botão salvar-inclusao está habilitado",
+  "keyword": "E "
+});
+formatter.step({
+  "line": 27,
+  "name": "clica no botão salvar-inclusao",
+  "keyword": "E "
+});
+formatter.step({
+  "line": 28,
+  "name": "certifico que a mensagem “Documento incluído.” é exibida",
+  "keyword": "Então "
+});
+formatter.match({
+  "location": "IncluirDocumentoEletronicoExpedidoSteps.acesso_a_tela_de_incluir_documento_expedido()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Documentos - Incluir Documento Expedido — Sistema Único",
+      "offset": 36
+    }
+  ],
+  "location": "IncluirDocumentoEletronicoExpedidoSteps.certifico_que_o_titulo_da_pagina_é(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "IncluirDocumentoEletronicoExpedidoSteps.certifico_que_a_url_do_navegador_contem_incluir_expedido()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "IncluirDocumentoEletronicoExpedidoSteps.seleciono_o_formato_eletrônico()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "IncluirDocumentoEletronicoExpedidoSteps.seleciono_natureza_Administrativa()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "assunto",
+      "offset": 25
+    },
+    {
+      "val": "descricaoComplementoAssunto",
+      "offset": 37
+    }
+  ],
+  "location": "IncluirDocumentoEletronicoExpedidoSteps.certifico_que_os_campos_e_estão_sendo_exibidos(String,String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "IncluirDocumentoEletronicoExpedidoSteps.preenche_os_seguintes_campos_obrigatórios(DataTable)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "IncluirDocumentoEletronicoExpedidoSteps.certifico_que_o_botão_salvar_inclusao_está_habilitado()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "IncluirDocumentoEletronicoExpedidoSteps.clica_no_botão_salvar_inclusao()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "IncluirDocumentoEletronicoExpedidoSteps.certifico_que_a_mensagem_Documento_incluído_é_exibida()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.after({
+  "duration": 933930247,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 91902,
+  "error_message": "java.lang.NullPointerException\r\n\tat stepDefinitions.unico.documentos.IncluirDocumentoEletronicoExpedidoSteps.tearDown(IncluirDocumentoEletronicoExpedidoSteps.java:115)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:40)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:34)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)\r\n\tat cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)\r\n\tat cucumber.runtime.Runtime.runHooks(Runtime.java:212)\r\n\tat cucumber.runtime.Runtime.runAfterHooks(Runtime.java:206)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:46)\r\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:100)\r\n\tat org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)\r\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)\r\n",
+  "status": "failed"
+});
+formatter.uri("login/LogarNoSistema.feature");
 formatter.feature({
   "comments": [
     {
@@ -21,45 +292,35 @@ formatter.feature({
   "keyword": "Funcionalidade"
 });
 formatter.scenarioOutline({
-  "line": 8,
+  "line": 12,
   "name": "Logar com Credenciais Válidas",
   "description": "",
   "id": "realizar-login-no-sistema;logar-com-credenciais-válidas",
   "type": "scenario_outline",
-  "keyword": "Esquema do Cenário"
+  "keyword": "Delineação do Cenário"
 });
 formatter.step({
-  "line": 9,
-  "name": "eu estou na pagina de login do Unico",
-  "keyword": "Dado "
-});
-formatter.step({
-  "line": 10,
-  "name": "checo que o título da pagina é \"Ministério Público Federal\"",
-  "keyword": "E "
-});
-formatter.step({
-  "line": 11,
+  "line": 13,
   "name": "o usuario entra com \"\u003cusuario\u003e\" e \"\u003csenha\u003e\" validos",
   "keyword": "Quando "
 });
 formatter.step({
-  "line": 12,
+  "line": 14,
   "name": "clica no botão \u0027Entrar\u0027 com name \u003d \"Submit\"",
   "keyword": "E "
 });
 formatter.step({
-  "line": 13,
+  "line": 15,
   "name": "vejo o link \"Único\"",
   "keyword": "Então "
 });
 formatter.step({
-  "line": 14,
+  "line": 16,
   "name": "certifico que existe os icones dos modulos do sistema",
   "keyword": "E "
 });
 formatter.examples({
-  "line": 15,
+  "line": 17,
   "name": "",
   "description": "",
   "id": "realizar-login-no-sistema;logar-com-credenciais-válidas;",
@@ -69,7 +330,7 @@ formatter.examples({
         "usuario",
         "senha"
       ],
-      "line": 16,
+      "line": 18,
       "id": "realizar-login-no-sistema;logar-com-credenciais-válidas;;1"
     },
     {
@@ -77,35 +338,31 @@ formatter.examples({
         "wesleyjesus@mpf.mp.br",
         "wesleyjesus@mpf.mp.br"
       ],
-      "line": 17,
+      "line": 19,
       "id": "realizar-login-no-sistema;logar-com-credenciais-válidas;;2"
-    },
-    {
-      "cells": [
-        "marceloanselmo@mpf.mp.br",
-        "marceloanselmo@mpf.mp.br"
-      ],
-      "line": 18,
-      "id": "realizar-login-no-sistema;logar-com-credenciais-válidas;;3"
     }
   ],
   "keyword": "Exemplos"
 });
 formatter.before({
-  "duration": 2975254746,
+  "duration": 29857,
   "status": "passed"
 });
 formatter.before({
-  "duration": 34055,
+  "duration": 3349387451,
   "status": "passed"
 });
-formatter.scenario({
-  "line": 17,
-  "name": "Logar com Credenciais Válidas",
+formatter.before({
+  "duration": 144700252,
+  "error_message": "org.openqa.selenium.SessionNotCreatedException: Unable to create new remote session. desired capabilities \u003d Capabilities [{browserName\u003dchrome, version\u003d, platform\u003dANY}], required capabilities \u003d Capabilities [{}]\nBuild info: version: \u00273.0.1\u0027, revision: \u00271969d75\u0027, time: \u00272016-10-18 09:49:13 -0700\u0027\nSystem info: host: \u0027PGRP00086946\u0027, ip: \u002710.222.122.226\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u00271.8.0_102\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:91)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:141)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:241)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:128)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:155)\r\n\tat stepDefinitions.unico.documentos.IncluirDocumentoEletronicoExpedidoSteps.setUp(IncluirDocumentoEletronicoExpedidoSteps.java:34)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:40)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:34)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)\r\n\tat cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)\r\n\tat cucumber.runtime.Runtime.runHooks(Runtime.java:212)\r\n\tat cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)\r\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:100)\r\n\tat org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)\r\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)\r\n",
+  "status": "failed"
+});
+formatter.background({
+  "line": 8,
+  "name": "",
   "description": "",
-  "id": "realizar-login-no-sistema;logar-com-credenciais-válidas;;2",
-  "type": "scenario",
-  "keyword": "Esquema do Cenário"
+  "type": "background",
+  "keyword": "Fundo"
 });
 formatter.step({
   "line": 9,
@@ -117,37 +374,11 @@ formatter.step({
   "name": "checo que o título da pagina é \"Ministério Público Federal\"",
   "keyword": "E "
 });
-formatter.step({
-  "line": 11,
-  "name": "o usuario entra com \"wesleyjesus@mpf.mp.br\" e \"wesleyjesus@mpf.mp.br\" validos",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Quando "
-});
-formatter.step({
-  "line": 12,
-  "name": "clica no botão \u0027Entrar\u0027 com name \u003d \"Submit\"",
-  "keyword": "E "
-});
-formatter.step({
-  "line": 13,
-  "name": "vejo o link \"Único\"",
-  "keyword": "Então "
-});
-formatter.step({
-  "line": 14,
-  "name": "certifico que existe os icones dos modulos do sistema",
-  "keyword": "E "
-});
 formatter.match({
   "location": "LogarSistemaUnicoSteps.eu_estou_na_pagina_de_login_do_Unico()"
 });
-formatter.write("Abrir tela de login do Unico!");
 formatter.result({
-  "duration": 315341040,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -159,8 +390,39 @@ formatter.match({
   "location": "LogarSistemaUnicoSteps.checo_que_o_título_da_pagina_é(String)"
 });
 formatter.result({
-  "duration": 7711782,
-  "status": "passed"
+  "status": "skipped"
+});
+formatter.scenario({
+  "line": 19,
+  "name": "Logar com Credenciais Válidas",
+  "description": "",
+  "id": "realizar-login-no-sistema;logar-com-credenciais-válidas;;2",
+  "type": "scenario",
+  "keyword": "Delineação do Cenário"
+});
+formatter.step({
+  "line": 13,
+  "name": "o usuario entra com \"wesleyjesus@mpf.mp.br\" e \"wesleyjesus@mpf.mp.br\" validos",
+  "matchedColumns": [
+    0,
+    1
+  ],
+  "keyword": "Quando "
+});
+formatter.step({
+  "line": 14,
+  "name": "clica no botão \u0027Entrar\u0027 com name \u003d \"Submit\"",
+  "keyword": "E "
+});
+formatter.step({
+  "line": 15,
+  "name": "vejo o link \"Único\"",
+  "keyword": "Então "
+});
+formatter.step({
+  "line": 16,
+  "name": "certifico que existe os icones dos modulos do sistema",
+  "keyword": "E "
 });
 formatter.match({
   "arguments": [
@@ -176,8 +438,7 @@ formatter.match({
   "location": "LogarSistemaUnicoSteps.o_usuario_entra_com_e_validos(String,String)"
 });
 formatter.result({
-  "duration": 143863859,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -189,8 +450,7 @@ formatter.match({
   "location": "LogarSistemaUnicoSteps.clica_no_botão_Entrar_com_name(String)"
 });
 formatter.result({
-  "duration": 1020890062,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -202,35 +462,42 @@ formatter.match({
   "location": "LogarSistemaUnicoSteps.vejo_o_link(String)"
 });
 formatter.result({
-  "duration": 18583199,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LogarSistemaUnicoSteps.certifico_que_existe_os_icones_dos_modulos_do_sistema()"
 });
 formatter.result({
-  "duration": 139487116,
+  "status": "skipped"
+});
+formatter.after({
+  "duration": 831070223,
   "status": "passed"
 });
 formatter.after({
-  "duration": 917587818,
+  "duration": 91902,
+  "error_message": "java.lang.NullPointerException\r\n\tat stepDefinitions.unico.documentos.IncluirDocumentoEletronicoExpedidoSteps.tearDown(IncluirDocumentoEletronicoExpedidoSteps.java:115)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:40)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:34)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)\r\n\tat cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)\r\n\tat cucumber.runtime.Runtime.runHooks(Runtime.java:212)\r\n\tat cucumber.runtime.Runtime.runAfterHooks(Runtime.java:206)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:46)\r\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:100)\r\n\tat org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)\r\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)\r\n",
+  "status": "failed"
+});
+formatter.before({
+  "duration": 27058,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2191446831,
+  "duration": 3371495762,
   "status": "passed"
 });
 formatter.before({
-  "duration": 10730,
-  "status": "passed"
+  "duration": 110612932,
+  "error_message": "org.openqa.selenium.SessionNotCreatedException: Unable to create new remote session. desired capabilities \u003d Capabilities [{browserName\u003dchrome, version\u003d, platform\u003dANY}], required capabilities \u003d Capabilities [{}]\nBuild info: version: \u00273.0.1\u0027, revision: \u00271969d75\u0027, time: \u00272016-10-18 09:49:13 -0700\u0027\nSystem info: host: \u0027PGRP00086946\u0027, ip: \u002710.222.122.226\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u00271.8.0_102\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:91)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:141)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:241)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:128)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:155)\r\n\tat stepDefinitions.unico.documentos.IncluirDocumentoEletronicoExpedidoSteps.setUp(IncluirDocumentoEletronicoExpedidoSteps.java:34)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:40)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:34)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)\r\n\tat cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)\r\n\tat cucumber.runtime.Runtime.runHooks(Runtime.java:212)\r\n\tat cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)\r\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:100)\r\n\tat org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)\r\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)\r\n",
+  "status": "failed"
 });
-formatter.scenario({
-  "line": 18,
-  "name": "Logar com Credenciais Válidas",
+formatter.background({
+  "line": 8,
+  "name": "",
   "description": "",
-  "id": "realizar-login-no-sistema;logar-com-credenciais-válidas;;3",
-  "type": "scenario",
-  "keyword": "Esquema do Cenário"
+  "type": "background",
+  "keyword": "Fundo"
 });
 formatter.step({
   "line": 9,
@@ -242,37 +509,11 @@ formatter.step({
   "name": "checo que o título da pagina é \"Ministério Público Federal\"",
   "keyword": "E "
 });
-formatter.step({
-  "line": 11,
-  "name": "o usuario entra com \"marceloanselmo@mpf.mp.br\" e \"marceloanselmo@mpf.mp.br\" validos",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Quando "
-});
-formatter.step({
-  "line": 12,
-  "name": "clica no botão \u0027Entrar\u0027 com name \u003d \"Submit\"",
-  "keyword": "E "
-});
-formatter.step({
-  "line": 13,
-  "name": "vejo o link \"Único\"",
-  "keyword": "Então "
-});
-formatter.step({
-  "line": 14,
-  "name": "certifico que existe os icones dos modulos do sistema",
-  "keyword": "E "
-});
 formatter.match({
   "location": "LogarSistemaUnicoSteps.eu_estou_na_pagina_de_login_do_Unico()"
 });
-formatter.write("Abrir tela de login do Unico!");
 formatter.result({
-  "duration": 226409461,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -284,74 +525,10 @@ formatter.match({
   "location": "LogarSistemaUnicoSteps.checo_que_o_título_da_pagina_é(String)"
 });
 formatter.result({
-  "duration": 3739965,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "marceloanselmo@mpf.mp.br",
-      "offset": 21
-    },
-    {
-      "val": "marceloanselmo@mpf.mp.br",
-      "offset": 50
-    }
-  ],
-  "location": "LogarSistemaUnicoSteps.o_usuario_entra_com_e_validos(String,String)"
-});
-formatter.result({
-  "duration": 153867578,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Submit",
-      "offset": 36
-    }
-  ],
-  "location": "LogarSistemaUnicoSteps.clica_no_botão_Entrar_com_name(String)"
-});
-formatter.result({
-  "duration": 3319143517,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Único",
-      "offset": 13
-    }
-  ],
-  "location": "LogarSistemaUnicoSteps.vejo_o_link(String)"
-});
-formatter.result({
-  "duration": 20447216672,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LogarSistemaUnicoSteps.certifico_que_existe_os_icones_dos_modulos_do_sistema()"
-});
-formatter.result({
-  "duration": 20401290257,
-  "error_message": "org.openqa.selenium.NoSuchElementException: {\"errorMessage\":\"Unable to find element with id \u0027unico-classico\u0027\",\"request\":{\"headers\":{\"Accept-Encoding\":\"gzip,deflate\",\"Connection\":\"Keep-Alive\",\"Content-Length\":\"39\",\"Content-Type\":\"application/json; charset\u003dutf-8\",\"Host\":\"localhost:10803\",\"User-Agent\":\"Apache-HttpClient/4.5.2 (Java/1.8.0_102)\"},\"httpVersion\":\"1.1\",\"method\":\"POST\",\"post\":\"{\\\"using\\\":\\\"id\\\",\\\"value\\\":\\\"unico-classico\\\"}\",\"url\":\"/element\",\"urlParsed\":{\"anchor\":\"\",\"query\":\"\",\"file\":\"element\",\"directory\":\"/\",\"path\":\"/element\",\"relative\":\"/element\",\"port\":\"\",\"host\":\"\",\"password\":\"\",\"user\":\"\",\"userInfo\":\"\",\"authority\":\"\",\"protocol\":\"\",\"source\":\"/element\",\"queryKey\":{},\"chunks\":[\"element\"]},\"urlOriginal\":\"/session/6dd43c00-b8d1-11e6-ba1d-4dca6298658b/element\"}}\nCommand duration or timeout: 20.40 seconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.0.1\u0027, revision: \u00271969d75\u0027, time: \u00272016-10-18 09:49:13 -0700\u0027\nSystem info: host: \u0027PGRP00086946\u0027, ip: \u002710.222.122.226\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u00271.8.0_102\u0027\nDriver info: org.openqa.selenium.phantomjs.PhantomJSDriver\nCapabilities [{applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, handlesAlerts\u003dfalse, databaseEnabled\u003dfalse, version\u003d2.1.1, platform\u003dXP, browserConnectionEnabled\u003dfalse, proxy\u003d{proxyType\u003ddirect}, nativeEvents\u003dtrue, acceptSslCerts\u003dfalse, driverVersion\u003d1.2.0, locationContextEnabled\u003dfalse, webStorageEnabled\u003dfalse, browserName\u003dphantomjs, takesScreenshot\u003dtrue, driverName\u003dghostdriver, javascriptEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue}]\nSession ID: 6dd43c00-b8d1-11e6-ba1d-4dca6298658b\n*** Element info: {Using\u003did, value\u003dunico-classico}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:417)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:218)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)\r\n\tat pages.unico.login.TelaDeLoginPage.verificaIconeDosModulosTelaInicial(TelaDeLoginPage.java:68)\r\n\tat stepDefinitions.unico.login.LogarSistemaUnicoSteps.certifico_que_existe_os_icones_dos_modulos_do_sistema(LogarSistemaUnicoSteps.java:86)\r\n\tat ✽.E certifico que existe os icones dos modulos do sistema(login/LogarNoSistema.feature:14)\r\nCaused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken\nBuild info: version: \u00273.0.1\u0027, revision: \u00271969d75\u0027, time: \u00272016-10-18 09:49:13 -0700\u0027\nSystem info: host: \u0027PGRP00086946\u0027, ip: \u002710.222.122.226\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u00271.8.0_102\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:142)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:417)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:218)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)\r\n\tat pages.unico.login.TelaDeLoginPage.verificaIconeDosModulosTelaInicial(TelaDeLoginPage.java:68)\r\n\tat stepDefinitions.unico.login.LogarSistemaUnicoSteps.certifico_que_existe_os_icones_dos_modulos_do_sistema(LogarSistemaUnicoSteps.java:86)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:40)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:34)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)\r\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\r\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:300)\r\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\r\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)\r\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:100)\r\n\tat org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)\r\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)\r\nCaused by: org.openqa.selenium.NoSuchElementException: {\"errorMessage\":\"Unable to find element with id \u0027unico-classico\u0027\",\"request\":{\"headers\":{\"Accept-Encoding\":\"gzip,deflate\",\"Connection\":\"Keep-Alive\",\"Content-Length\":\"39\",\"Content-Type\":\"application/json; charset\u003dutf-8\",\"Host\":\"localhost:10803\",\"User-Agent\":\"Apache-HttpClient/4.5.2 (Java/1.8.0_102)\"},\"httpVersion\":\"1.1\",\"method\":\"POST\",\"post\":\"{\\\"using\\\":\\\"id\\\",\\\"value\\\":\\\"unico-classico\\\"}\",\"url\":\"/element\",\"urlParsed\":{\"anchor\":\"\",\"query\":\"\",\"file\":\"element\",\"directory\":\"/\",\"path\":\"/element\",\"relative\":\"/element\",\"port\":\"\",\"host\":\"\",\"password\":\"\",\"user\":\"\",\"userInfo\":\"\",\"authority\":\"\",\"protocol\":\"\",\"source\":\"/element\",\"queryKey\":{},\"chunks\":[\"element\"]},\"urlOriginal\":\"/session/6dd43c00-b8d1-11e6-ba1d-4dca6298658b/element\"}}\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.0.1\u0027, revision: \u00271969d75\u0027, time: \u00272016-10-18 09:49:13 -0700\u0027\nSystem info: host: \u0027PGRP00086946\u0027, ip: \u002710.222.122.226\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u00271.8.0_102\u0027\nDriver info: driver.version: unknown\r\n",
-  "status": "failed"
-});
-formatter.after({
-  "duration": 859329363,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 2187107408,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 14928,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.scenario({
-  "line": 20,
+  "line": 21,
   "name": "Logar com Credenciais Inválidas",
   "description": "",
   "id": "realizar-login-no-sistema;logar-com-credenciais-inválidas",
@@ -359,17 +536,7 @@ formatter.scenario({
   "keyword": "Cenário"
 });
 formatter.step({
-  "line": 21,
-  "name": "eu estou na pagina de login do Unico",
-  "keyword": "Dado "
-});
-formatter.step({
   "line": 22,
-  "name": "checo que o título da pagina é \"Ministério Público Federal\"",
-  "keyword": "E "
-});
-formatter.step({
-  "line": 23,
   "name": "o usuario entra com usuario e senha invalidos:",
   "rows": [
     {
@@ -377,55 +544,33 @@ formatter.step({
         "usuario",
         "senha"
       ],
-      "line": 24
+      "line": 23
     },
     {
       "cells": [
         "wesleyjesus@mpf.mp.br",
         "123"
       ],
-      "line": 25
+      "line": 24
     }
   ],
   "keyword": "Quando "
 });
 formatter.step({
-  "line": 26,
+  "line": 25,
   "name": "clica no botão \u0027Entrar\u0027 com name \u003d \"Submit\"",
   "keyword": "E "
 });
 formatter.step({
-  "line": 27,
+  "line": 26,
   "name": "vejo a mensagem \"-E-mail e/ou senha inválidos.\"",
   "keyword": "Então "
-});
-formatter.match({
-  "location": "LogarSistemaUnicoSteps.eu_estou_na_pagina_de_login_do_Unico()"
-});
-formatter.write("Abrir tela de login do Unico!");
-formatter.result({
-  "duration": 228257285,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Ministério Público Federal",
-      "offset": 32
-    }
-  ],
-  "location": "LogarSistemaUnicoSteps.checo_que_o_título_da_pagina_é(String)"
-});
-formatter.result({
-  "duration": 7151977,
-  "status": "passed"
 });
 formatter.match({
   "location": "LogarSistemaUnicoSteps.o_usuario_entra_com_usuario_e_senha_invalidos(DataTable)"
 });
 formatter.result({
-  "duration": 156544379,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -437,8 +582,7 @@ formatter.match({
   "location": "LogarSistemaUnicoSteps.clica_no_botão_Entrar_com_name(String)"
 });
 formatter.result({
-  "duration": 156927379,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -450,11 +594,15 @@ formatter.match({
   "location": "LogarSistemaUnicoSteps.vejo_a_mensagem(String)"
 });
 formatter.result({
-  "duration": 58051794,
+  "status": "skipped"
+});
+formatter.after({
+  "duration": 835322915,
   "status": "passed"
 });
 formatter.after({
-  "duration": 851709948,
-  "status": "passed"
+  "duration": 73708,
+  "error_message": "java.lang.NullPointerException\r\n\tat stepDefinitions.unico.documentos.IncluirDocumentoEletronicoExpedidoSteps.tearDown(IncluirDocumentoEletronicoExpedidoSteps.java:115)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:40)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:34)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)\r\n\tat cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)\r\n\tat cucumber.runtime.Runtime.runHooks(Runtime.java:212)\r\n\tat cucumber.runtime.Runtime.runAfterHooks(Runtime.java:206)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:46)\r\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:100)\r\n\tat org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)\r\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)\r\n",
+  "status": "failed"
 });
 });

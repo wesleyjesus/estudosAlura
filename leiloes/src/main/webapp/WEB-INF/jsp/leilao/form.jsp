@@ -29,7 +29,7 @@
 	</div>
 	
 <div class="actions">
-	<button type="submit">Salvar!</button>
+	<button id="btnSalvarLeilao" type="submit">Salvar!</button>
 	</div>
 </form>
 

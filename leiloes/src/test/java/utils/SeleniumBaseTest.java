@@ -1,5 +1,7 @@
 package utils;
 
+import static org.junit.Assert.assertTrue;
+
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
@@ -42,13 +44,22 @@ public class SeleniumBaseTest {
 		System.setProperty("webdriver.chrome.driver", "C:\\WebDrivers Selenium\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-//		driver.get("http://localhost:8080/apenas-teste/limpa");
-//		this.usuarios = new UsuariosPage(driver);
-//		this.leiloes = new LeiloesPage(driver);
+		driver.get("http://localhost:8080/apenas-teste/limpa");
+		this.usuarios = new UsuariosPage(driver);
+		this.leiloes = new LeiloesPage(driver);
 		
 		// abrir as páginas iniciais dos testes
-//		this.usuarios.visita();
-//		this.leiloes.visita();
+		
+		
+		this.usuarios.visita();
+		usuarios.novoUsuario().cadastra("Paulo Henrique", "paulohenrique@email.com.br");
+		usuarios.novoUsuario().cadastra("José Alberto", "jose@alberto.com");
+		
+		this.leiloes.visita();
+		leiloes.novoLeilao().cadastroLeilao("Computador", 2000.00, "Paulo Henrique", false);		
+		assertTrue("Leilão não cadastrado!" , leiloes.existeLeilao("Computador", 2000.00, "Paulo Henrique", false));
+		
+		
 	}
 	
 	@After

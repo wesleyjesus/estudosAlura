@@ -13,13 +13,13 @@ public class LeiloesTest extends SeleniumBaseTest {
 	@Test
 	public void deveAdicionarUmLeilao() {
 		
-		usuarios.visita();
 		usuarios.novoUsuario().cadastra("Paulo Henrique", "paulohenrique@email.com.br");
+		usuarios.novoUsuario().cadastra("José Alberto", "jose@alberto.com");
 		
-		leiloes.visita();
-		leiloes.novoLeilao().cadastroLeilao("Geladeira", 123.00, "Paulo Henrique", true);
+		leiloes.novoLeilao().cadastroLeilao("Computador", 2000.00, "Paulo Henrique", true);
+		
 			
-		assertTrue("Leilão não cadastrado!" , leiloes.existeLeilao("Geladeira", 123.00, "Paulo Henrique", true));
+		assertTrue("Leilão não cadastrado!" , leiloes.existeLeilao("Geladeira", 123.00, "Paulo Henrique", false));
 
 	}
 	
@@ -34,5 +34,7 @@ public class LeiloesTest extends SeleniumBaseTest {
 	
 
 	}
+	
+
 	
 }

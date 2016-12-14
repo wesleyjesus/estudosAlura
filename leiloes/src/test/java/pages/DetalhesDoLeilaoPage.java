@@ -27,10 +27,12 @@ public class DetalhesDoLeilaoPage {
 	}
 	
 	public boolean existeLance(String usuario, double valor) {
-        Boolean temUsuario = new WebDriverWait(driver, 10).until(ExpectedConditions.textToBePresentInElement((By.id("lancesDados")), usuario));
-		
-		if (temUsuario) return driver.getPageSource().contains(String.valueOf(valor));
-		return false;
+//        return driver.getPageSource().contains(usuario) && driver.getPageSource().contains(String.valueOf(valor));
+        
+        Boolean temUsuario = new WebDriverWait(driver, 10).until(ExpectedConditions.textToBePresentInElement(By.id("lancesDados"), usuario));
+
+        if(temUsuario) return driver.getPageSource().contains(String.valueOf(valor));
+        return false;
 	
 	}
 	

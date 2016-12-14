@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
 
 import cucumber.api.DataTable;
@@ -17,6 +18,7 @@ import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Então;
 import cucumber.api.java.pt.Quando;
 import pages.unico.login.TelaDeLoginPage;
+import pages.unico.login.TelaPaginaInicial;
 import utils.GuardarCenarioCucumber;
 import utils.PhantomJSUtility;
 
@@ -24,6 +26,7 @@ public class LogarSistemaUnicoSteps {
 	
 	private WebDriver driver;
 	private TelaDeLoginPage loginUnico;
+	private TelaPaginaInicial paginaInicial;
 	private Scenario scenario;
 	private StringBuffer verificationErrors = new StringBuffer();
 	
@@ -34,16 +37,17 @@ public class LogarSistemaUnicoSteps {
 	
 	@Before
 	public void setUp() throws Exception {
-		// System.setProperty("webdriver.chrome.driver", "C:\\WebDrivers
-		// Selenium\\chromedriver.exe");
 		
-		File src = new File("C:\\phantomjs2\\bin\\phantomjs.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\WebDrivers Selenium\\chromedriver.exe");
+		driver = new ChromeDriver();
 		
-		System.out.println("### Sessão do navegador iniciada ###");
-		
-		System.setProperty("phantomjs.binary.path", src.getAbsolutePath());
-		
-		driver = new PhantomJSDriver();
+//		File src = new File("C:\\phantomjs2\\bin\\phantomjs.exe");
+//		
+		System.out.println("### Abri navegador teste login ###");
+//		
+//		System.setProperty("phantomjs.binary.path", src.getAbsolutePath());
+//		
+//		driver = new PhantomJSDriver();
 		
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
@@ -51,6 +55,7 @@ public class LogarSistemaUnicoSteps {
 		// PhantomJSUtility.captureScreenshot(driver, "PreencheLoginESenha");
 
 		this.loginUnico = new TelaDeLoginPage(driver);
+		this.paginaInicial = new TelaPaginaInicial(driver);
 	}
 	
 	@Dado("^eu estou na pagina de login do Unico$")
@@ -78,12 +83,12 @@ public class LogarSistemaUnicoSteps {
 
 	@Então("^vejo o link \"([^\"]*)\"$")
 	public void vejo_o_link(String linkUnico) throws Throwable {
-	    loginUnico.verificaQueEstaTelaInicial(linkUnico);
+		paginaInicial.verificaQueEstaTelaInicial(linkUnico);
 	}
 
 	@Então("^certifico que existe os icones dos modulos do sistema$")
 	public void certifico_que_existe_os_icones_dos_modulos_do_sistema() throws Throwable {
-	    loginUnico.verificaIconeDosModulosTelaInicial();
+		paginaInicial.verificaIconeDosModulosTelaInicial();
 	}
 	
 	@Quando("^o usuario entra com usuario e senha invalidos:$")
@@ -95,7 +100,7 @@ public class LogarSistemaUnicoSteps {
 
 	@Então("^vejo a mensagem \"([^\"]*)\"$")
 	public void vejo_a_mensagem(String mensagem) throws Throwable {
-	    loginUnico.verificaMensagemErroLogin(mensagem);
+		paginaInicial.verificaMensagemErroLogin(mensagem);
 	}
 	
 	@After

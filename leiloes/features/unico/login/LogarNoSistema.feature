@@ -5,9 +5,11 @@ Funcionalidade: Realizar login no sistema
   
   Eu quero ter acesso a pagina de login do sistema e realizar o login no mesmo.
 
-  Delineação do Cenário: Logar com Credenciais Válidas
-    Dado eu estou na pagina de login do Unico
+  Fundo:
+  	Dado eu estou na pagina de login do Unico
     E checo que o título da pagina é "Ministério Público Federal"
+  
+  Delineação do Cenário: Logar com Credenciais Válidas
     Quando o usuario entra com "<usuario>" e "<senha>" validos
     E clica no botão 'Entrar' com name = "Submit"
     Então vejo o link "Único"
@@ -17,8 +19,6 @@ Funcionalidade: Realizar login no sistema
       | wesleyjesus@mpf.mp.br 		| wesleyjesus@mpf.mp.br		 |
 
   Cenário: Logar com Credenciais Inválidas
-    Dado eu estou na pagina de login do Unico
-    E checo que o título da pagina é "Ministério Público Federal"
     Quando o usuario entra com usuario e senha invalidos:
       | usuario               | senha |
       | wesleyjesus@mpf.mp.br |   123 |
