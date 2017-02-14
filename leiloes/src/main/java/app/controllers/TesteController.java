@@ -1,18 +1,9 @@
 package app.controllers;
 
-import java.util.List;
-
-import app.models.Usuario;
-import app.repositories.UsuarioRepository;
-import br.com.caelum.vraptor.Delete;
-import br.com.caelum.vraptor.Get;
-import br.com.caelum.vraptor.Post;
-import br.com.caelum.vraptor.Put;
-import br.com.caelum.vraptor.Resource;
-import br.com.caelum.vraptor.Result;
-import br.com.caelum.vraptor.Validator;
-import br.com.caelum.vraptor.validator.ValidationMessage;
 import javax.persistence.EntityManager;
+
+import br.com.caelum.vraptor.Get;
+import br.com.caelum.vraptor.Resource;
 
 @Resource
 public class TesteController {

@@ -1,5 +1,6 @@
 package app.controllers;
 
+import java.util.Calendar;
 import java.util.List;
 
 import app.models.Leilao;
@@ -10,9 +11,6 @@ import br.com.caelum.vraptor.Post;
 import br.com.caelum.vraptor.Resource;
 import br.com.caelum.vraptor.Result;
 import br.com.caelum.vraptor.Validator;
-import br.com.caelum.vraptor.Validator;
-
-import java.util.Calendar;
 import br.com.caelum.vraptor.validator.ValidationMessage;
 
 @Resource
